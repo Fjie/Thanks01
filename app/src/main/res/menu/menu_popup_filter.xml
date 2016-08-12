@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_all"
+            android:title="全部事件" />
+        <item
+            android:id="@+id/action_filter_help"
+            android:title="求帮助" />
+        <item
+            android:id="@+id/action_filter_guys"
+            android:title="约伙伴" />
+        <item
+            android:id="@+id/action_filter_red"
+            android:title="抢红包" />
+    </group>
+
+</menu>

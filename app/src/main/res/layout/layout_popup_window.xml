@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/ControlLayoutGlobal">
+
+        <LinearLayout style="@style/ControlLayoutMeddle">
+
+            <TextView
+                style="@style/PopupWindowSubhead"
+                android:text="求帮助" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ControlLayoutEnd">
+
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/funIssueHelp"
+                android:onClick="onClick"
+                style="@style/ButtonFloatSmall"
+                android:background="@color/blue_light"
+                md:iconDrawable="@drawable/ic_announcement_white_48dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ControlLayoutGlobal">
+
+        <LinearLayout style="@style/ControlLayoutMeddle">
+
+            <TextView
+                style="@style/PopupWindowSubhead"
+                android:text="约伙伴" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ControlLayoutEnd">
+
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/funInviteGuys"
+                android:onClick="onClick"
+                style="@style/ButtonFloatSmall"
+                android:background="@color/blue_light"
+                md:iconDrawable="@drawable/ic_location_on_white_48dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ControlLayoutGlobal">
+
+        <LinearLayout style="@style/ControlLayoutMeddle">
+
+            <TextView
+                style="@style/PopupWindowSubhead"
+                android:text="发红包" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ControlLayoutEnd">
+
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/funRedPackes"
+                android:onClick="onClick"
+                style="@style/ButtonFloatSmall"
+                android:background="@color/blue_light"
+                md:iconDrawable="@drawable/ic_red" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--style="@style/ControlLayoutGlobal">-->
+    <!--<LinearLayout-->
+    <!--style="@style/ControlLayoutMeddle">-->
+    <!--<TextView-->
+    <!--android:text="送礼物"-->
+    <!--style="@style/PopupWindowSubhead"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--style="@style/ControlLayoutEnd">-->
+    <!--<com.gc.materialdesign.views.ButtonFloat-->
+    <!--md:iconDrawable="@drawable/ic_card_giftcard_white_3x"-->
+    <!--style="@style/ButtonFloatSmall"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

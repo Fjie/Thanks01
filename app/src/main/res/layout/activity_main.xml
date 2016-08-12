@@ -1,0 +1,48 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="@style/ContentPanel"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout style="@style/BackgroundPanel">
+
+            <include layout="@layout/layout_toolbar" />
+
+        <FrameLayout style="@style/ContentPanel">
+
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/map"
+                style="@style/ContentPanel" />
+
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/issueEvent"
+                style="@style/ButtonFloat"
+                android:background="@color/red_light"
+                android:onClick="onClick"
+                md:animate="true"
+                md:iconDrawable="@drawable/ic_add_white_36pt_3x" />
+        </FrameLayout>
+
+
+        <!--<fragment-->
+        <!--android:id="@+id/left_drawer"-->
+        <!--android:name="me.fanjie.thanks01.view.DrawerFragment"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:layout_width="@dimen/drawer_width"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:layout="@layout/fragment_drawer"/>-->
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        app:itemTextColor="#ff000000"
+        android:id="@+id/left_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_drawer_header"
+        app:menu="@menu/menu_drawer_list"
+        tools:layout="@layout/fragment_drawer" />
+</android.support.v4.widget.DrawerLayout>

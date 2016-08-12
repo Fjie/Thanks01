@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">谢谢</string>
+
+    <string name="hello_world">hello个蛋蛋</string>
+    <string name="action_settings">木有卵用的东西</string>
+    <string name="hello_blank_fragment">hello个鸡鸡</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_add_request">发布事件</string>
+    <string name="title_activity_request_content">事件详情</string>
+    <string name="title_activity_user_content">用户详情</string>
+    <string name="title_activity_thanks_content">感谢详情</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_friends_list">\@用户</string>
+    <string name="title_activity_thanks_list">感谢列表</string>
+    <string name="title_activity_message_list">消息列表</string>
+    <string name="title_activity_request_list">事件列表</string>
+    <string name="title_activity_good_man_list">好心人列表</string>
+    <string name="title_activity_user_list">用户列表</string>
+    <string name="title_activity_user_content_group">团体用户详情</string>
+    <string name="title_activity_issue_help">求帮助</string>
+</resources>

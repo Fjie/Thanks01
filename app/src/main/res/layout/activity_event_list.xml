@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BackgroundPanel">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <ListView
+        android:id="@+id/eventList"
+        style="@style/ContentPanel" />
+
+
+</LinearLayout>

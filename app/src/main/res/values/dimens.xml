@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="child_panel_vertical_padding">8dp</dimen>
+    <dimen name="child_panel_horizontal_padding">16dp</dimen>
+    <dimen name="child_panel_bottom_margin">1dp</dimen>
+
+    <dimen name="user_image_size_big">72dp</dimen>
+    <dimen name="user_image_margin_right_big">16dp</dimen>
+    <dimen name="user_image_size">64dp</dimen>
+    <dimen name="function_icon_size">32dp</dimen>
+    <dimen name="function_icon_horizontal_margin">16dp</dimen>
+    <dimen name="function_icon_vertical_margin">8dp</dimen>
+
+    <dimen name="spliter_height">16dp</dimen>
+    <dimen name="title_bottom_margin">8dp</dimen>
+    <dimen name="subhead_bottom_margin">4dp</dimen>
+
+    <dimen name="button_float_margin_right">16dp</dimen>
+    <dimen name="button_float_margin_bottom">24dp</dimen>
+    <dimen name="button_float_margin_hight_bottom">80dp</dimen>
+    <dimen name="button_float_size">64dp</dimen>
+    <dimen name="button_float_small_size">48dp</dimen>
+    <dimen name="button_float_margin_small_vertical">16dp</dimen>
+
+    <dimen name="drawer_width">264dp</dimen>
+    <dimen name="activity_bottom_height">96dp</dimen>
+    <dimen name="activity_bottom_height_big">176dp</dimen>
+    <dimen name="popup_window_subhead_maigin_right">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="message__title_user_name_margin_right">16dp</dimen>
+
+</resources>

@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- 各种背景面板-->
+    <style name="AppPanel">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="BackgroundPanel" parent="AppPanel">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+    <style name="ContentPanel" parent="AppPanel">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ToolBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/red_light</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+
+    </style>
+    <!-- 各种信息子面板-->
+    <style name="ChildPanel">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/light</item>
+    </style>
+    <style name="ChildPanelPadding" parent="ChildPanel">
+        <item name="android:paddingTop">@dimen/child_panel_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/child_panel_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/child_panel_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/child_panel_horizontal_padding</item>
+    </style>
+    <style name="InfoPanel" parent="ChildPanelPadding">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="FunctionPanel" parent="ChildPanelPadding">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+    <style name="FunctionPanelSmall" parent="FunctionPanel">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ItemPanel" parent="FunctionPanel">
+
+    </style>
+    <!-- 各种子面板控制器-->
+    <style name="ControlLayoutGlobal" parent="AppPanel">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ControlLayoutStart">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ControlLayoutMeddle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ControlLayoutEnd">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- 各种ImageView-->
+    <style name="Image">
+
+    </style>
+    <style name="UserImageBig" parent="Image">
+        <item name="android:layout_marginRight">@dimen/user_image_margin_right_big</item>
+        <item name="android:layout_height">@dimen/user_image_size_big</item>
+        <item name="android:layout_width">@dimen/user_image_size_big</item>
+    </style>
+    <style name="UserImage" parent="Image">
+        <item name="android:layout_marginRight">@dimen/user_image_margin_right_big</item>
+        <item name="android:layout_height">@dimen/user_image_size</item>
+        <item name="android:layout_width">@dimen/user_image_size</item>
+    </style>
+
+    <style name="FunctionIcon" parent="Image">
+        <item name="android:layout_height">@dimen/function_icon_size</item>
+        <item name="android:layout_width">@dimen/function_icon_size</item>
+        <item name="android:layout_marginRight">@dimen/function_icon_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/function_icon_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/function_icon_vertical_margin</item>
+    </style>
+    <!-- 各种文本-->
+    <style name="Text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="Title" parent="Text">
+        <item name="android:text">标题文本</item>
+        <item name="android:layout_marginBottom">@dimen/title_bottom_margin</item>
+        <item name="android:textSize">@dimen/abc_text_size_title_material</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="Subhead" parent="Text">
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/subhead_bottom_margin</item>
+    </style>
+
+    <style name="PopupWindowSubhead" parent="Subhead">
+        <item name="android:textColor">@color/light</item>
+        <item name="android:layout_marginRight">@dimen/popup_window_subhead_maigin_right</item>
+    </style>
+    <style name="Body" parent="Text">
+        <item name="android:text">内容文本</item>
+        <item name="android:textSize">@dimen/abc_text_size_body_1_material</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="Spliter" >
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 其他组件-->
+    <style name="ButtonFloat">
+        <item name="android:layout_height">@dimen/button_float_size</item>
+        <item name="android:layout_width">@dimen/button_float_size</item>
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginRight">@dimen/button_float_margin_right</item>
+    </style>
+    <style name="ButtonFloatSmall">
+        <item name="android:layout_height">@dimen/button_float_small_size</item>
+        <item name="android:layout_width">@dimen/button_float_small_size</item>
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">@dimen/button_float_margin_small_vertical</item>
+        <item name="android:layout_marginTop">@dimen/button_float_margin_small_vertical</item>
+        <item name="android:layout_marginRight">@dimen/button_float_margin_right</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

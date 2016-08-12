@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.LayoutRipple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FunctionPanel">
+    <LinearLayout
+        style="@style/ControlLayoutGlobal">
+        <ImageView
+            android:id="@+id/userImage"
+            style="@style/UserImage"/>
+        <LinearLayout
+            style="@style/ControlLayoutMeddle">
+            <TextView
+                android:id="@+id/userName"
+                style="@style/Title"/>
+            <TextView
+                android:id="@+id/userResume"
+                style="@style/Body"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.gc.materialdesign.views.LayoutRipple>
+
+
+
+
+

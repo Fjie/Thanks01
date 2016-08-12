@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    style="@style/BackgroundPanel">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <FrameLayout
+        style="@style/ContentPanel">
+
+    </FrameLayout>
+
+</LinearLayout>

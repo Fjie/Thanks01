@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    style="@style/BackgroundPanel">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <FrameLayout
+        style="@style/AppPanel">
+
+        <ScrollView
+            style="@style/AppPanel">
+            <LinearLayout
+                style="@style/ContentPanel">
+                <TextView style="@style/Spliter"
+                    android:text="用户" />
+                <com.gc.materialdesign.views.LayoutRipple
+                    android:onClick="onSmallUserPanelClick"
+                    style="@style/ChildPanelPadding">
+                    <LinearLayout
+                        style="@style/ControlLayoutGlobal">
+
+                        <ImageView
+                            android:id="@+id/userImage"
+                            style="@style/UserImage"/>
+
+                        <LinearLayout
+                            style="@style/ControlLayoutMeddle">
+                            <TextView
+                                android:id="@+id/userName"
+                                style="@style/Title"/>
+                            <TextView
+                                android:id="@+id/userResume"
+                                style="@style/Body"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.gc.materialdesign.views.LayoutRipple>
+                <TextView style="@style/Spliter"
+                    android:text="标题" />
+                <LinearLayout
+                    style="@style/InfoPanel">
+                    <TextView
+                        android:id="@+id/eventTitle"
+                        style="@style/Title" />
+
+                </LinearLayout>
+                <TextView style="@style/Spliter"
+                    android:text="结束时间" />
+                <LinearLayout
+                    style="@style/InfoPanel">
+                    <TextView
+                        android:id="@+id/eventTime"
+                        style="@style/Subhead"/>
+
+                </LinearLayout>
+                <TextView style="@style/Spliter"
+                    android:text="描述" />
+                <LinearLayout
+                    style="@style/InfoPanel">
+
+                    <TextView
+                        android:id="@+id/eventDesc"
+                        style="@style/Body"
+                        android:maxLines="10" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_height="@dimen/activity_bottom_height_big"
+                    style="@style/Spliter"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/float_i_willing"
+            android:layout_marginBottom="@dimen/button_float_margin_bottom"
+            style="@style/ButtonFloat"/>
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/float_add_people"
+            md:animate="true"
+            android:layout_marginBottom="@dimen/button_float_margin_hight_bottom"
+            style="@style/ButtonFloat"/>
+
+    </FrameLayout>
+
+</LinearLayout>

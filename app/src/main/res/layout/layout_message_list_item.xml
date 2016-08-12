@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.LayoutRipple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FunctionPanel">
+
+    <LinearLayout style="@style/ControlLayoutGlobal">
+        <LinearLayout style="@style/ControlLayoutMeddle">
+            <LinearLayout
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:id="@+id/messageTitle"
+                style="@style/ControlLayoutGlobal">
+                <TextView
+                    android:id="@+id/messageTitleUserName"
+                    android:textColor="@color/blue_light"
+                    android:layout_marginRight="@dimen/message__title_user_name_margin_right"
+                    style="@style/Body" />
+                <TextView
+                    android:id="@+id/messageTitleType"
+                    style="@style/Body" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/messageContent"
+                style="@style/Title" />
+        </LinearLayout>
+    </LinearLayout>
+</com.gc.materialdesign.views.LayoutRipple>

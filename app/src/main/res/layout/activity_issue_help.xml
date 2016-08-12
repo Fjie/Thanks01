@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:md="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BackgroundPanel">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <FrameLayout style="@style/AppPanel">
+
+        <ScrollView style="@style/BackgroundPanel">
+
+
+            <LinearLayout style="@style/BackgroundPanel">
+
+                <TextView style="@style/Spliter" />
+
+                <FrameLayout style="@style/ChildPanelPadding">
+
+                    <LinearLayout style="@style/ControlLayoutGlobal">
+
+                        <LinearLayout style="@style/ControlLayoutStart">
+
+                            <ImageView
+                                style="@style/FunctionIcon"
+                                android:src="@drawable/ic_tag" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutMeddle">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="你需要什么帮助"
+                                    android:autoText="false"
+                                    android:clickable="false" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutEnd"></LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/ChildPanelPadding">
+
+                    <LinearLayout style="@style/ControlLayoutGlobal">
+
+                        <LinearLayout style="@style/ControlLayoutStart">
+
+                            <ImageView
+                                style="@style/FunctionIcon"
+                                android:src="@drawable/ic_content" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutMeddle">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="补充详细描述"/>
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutEnd"></LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView style="@style/Spliter" />
+
+                <FrameLayout style="@style/ChildPanelPadding">
+
+                    <LinearLayout style="@style/ControlLayoutGlobal">
+
+                        <LinearLayout style="@style/ControlLayoutStart">
+
+                            <ImageView
+                                style="@style/FunctionIcon"
+                                android:src="@drawable/ic_time" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutMeddle">
+
+                            <TextView
+                                android:clickable="true"
+                                android:onClick="choseTime"
+                                android:id="@+id/tvTime"
+                                android:hint="请选择时间"
+                                style="@style/Subhead"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutEnd"></LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/ChildPanelPadding">
+
+                    <LinearLayout style="@style/ControlLayoutGlobal">
+
+                        <LinearLayout style="@style/ControlLayoutStart">
+
+                            <ImageView
+                                style="@style/FunctionIcon"
+                                android:src="@drawable/ic_location" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutMeddle">
+
+                            <TextView
+                                android:id="@+id/tvLocation"
+                                android:hint="输入位置描述"
+                                style="@style/Subhead"/>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutEnd"></LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <FrameLayout style="@style/ChildPanelPadding">
+
+                    <LinearLayout style="@style/ControlLayoutGlobal">
+
+                        <LinearLayout style="@style/ControlLayoutStart">
+
+                            <ImageView
+                                style="@style/FunctionIcon"
+                                android:src="@drawable/ic_people_count" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutMeddle">
+                            <TextView
+                                android:id="@+id/tvUserCount"
+                                android:hint="请输入人数"
+                                style="@style/Subhead"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ControlLayoutEnd"></LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.LayoutRipple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FunctionPanel">
+
+    <LinearLayout style="@style/ControlLayoutGlobal">
+        <LinearLayout style="@style/ControlLayoutMeddle">
+            <LinearLayout
+                android:paddingBottom="8dp"
+                style="@style/ControlLayoutGlobal">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/sendUserName"
+                    android:textColor="@color/blue_light"
+                    style="@style/Body" />
+                <TextView
+                    android:id="@+id/thanksDate"
+                    style="@style/Body" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/thanksContent"
+                style="@style/Title" />
+            <LinearLayout
+                style="@style/ControlLayoutGlobal">
+                <TextView
+                    android:id="@+id/eventType"
+                    style="@style/Body" />
+                <TextView
+                    android:id="@+id/eventTitle"
+                    android:textColor="@color/blue_light"
+                    style="@style/Body" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.gc.materialdesign.views.LayoutRipple>

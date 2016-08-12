@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.fanjie.thanks01" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 测试用-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5753aebdb59899a3ff94cfc5f364fc20" />
+        <!-- 安装包用-->
+        <!--<meta-data-->
+            <!--android:name="com.amap.api.v2.apikey"-->
+            <!--android:value="33be5a4221075399c7bead38d8b18e12" />-->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.AddEventActivity"
+            android:label="@string/title_activity_add_request" >
+        </activity>
+        <activity
+            android:name=".view.EventContentActivity"
+            android:label="@string/title_activity_request_content" >
+        </activity>
+        <activity
+            android:name=".view.UserContentActivity"
+            android:label="@string/title_activity_user_content" >
+        </activity>
+        <activity
+            android:name=".view.ThanksContentActivity"
+            android:label="@string/title_activity_thanks_content" >
+        </activity>
+        <activity
+            android:name=".view.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".view.FriendsListActivity"
+            android:label="@string/title_activity_friends_list" >
+        </activity>
+        <activity
+            android:name=".view.ThanksListActivity"
+            android:label="@string/title_activity_thanks_list" >
+        </activity>
+        <activity
+            android:name=".view.MessageListActivity"
+            android:label="@string/title_activity_message_list" >
+        </activity>
+        <activity
+            android:name=".view.EventListActivity"
+            android:label="@string/title_activity_request_list" >
+        </activity>
+        <activity
+            android:name=".view.GoodManListActivity"
+            android:label="@string/title_activity_good_man_list" >
+        </activity>
+        <activity
+            android:name=".view.UserListActivity"
+            android:label="@string/title_activity_user_list" >
+        </activity>
+        <activity
+            android:name=".view.UserContentGroupActivity"
+            android:label="@string/title_activity_user_content_group" >
+        </activity>
+        <activity android:name=".view.IssueHelpActivity" >
+        </activity>
+        <activity android:name=".view.InviteGuysActivity" >
+        </activity>
+        <activity android:name=".view.RedPackesActivity" >
+        </activity>
+    </application>
+
+</manifest>
